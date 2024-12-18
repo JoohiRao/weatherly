@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.text{
+    color: skyblue;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 40px;
+    color:#fff;
+    background: linear-gradient(to right, #5F9EA0, #4682B4);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.search{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    border: 2px solid #fff;
+    outline: 0;
+    font-size: 18px;
+    margin-right: 16px;
+    flex: 1;
+    border-radius: 30px;
+    height: 60px;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+
+button{
+    background: linear-gradient(to right, #5F9EA0, #4682B4);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* //WEATHER
+
+*/
+
+
+.bg-remove {
+    margin-top: 5px;
+    background-color: transparent; /* Ensures the background is transparent */
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0)); /* Removes the background */
+}
+
+
+.weather{
+    display: none;
+
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+    margin-top: 50px;
+    display: none;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.humidity,.wind{
+    margin-top: -6px;
+    font-size: 28px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.error{
+    color: red;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
